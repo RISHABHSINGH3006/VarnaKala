@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="v.png" type="image/x-icon" />
+
+    <!--=============== REMIX ICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>VarnaKala</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="v" class="nav__logo">
+          <i class="nav__logo-icon"><img id="love" src="v.png" /></i> Varna-Kala
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#products" class="nav__link">Services</a>
+            </li>
+            <li class="nav__item">
+              <a href="#faqs" class="nav__link">FAQs</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact Us</a>
+            </li>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="nav__btns">
+          <!-- Theme change button -->
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+          <div class="nav__toggle" id="nav-toggle">
+              <i class="ri-menu-line"></i>
+          </div>
+      </div>
+
+
+      </nav>
+    </header>
+
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home" id="home">
+        <div class="home__container container grid">
+          <img src="3d-interior-png.webp" alt="" class="home__img" />
+
+          <div class="home__data">
+            <h1 class="home__title">Varna-Kala<br />Better living</h1>
+            <p class="home__description">
+              Transforming Spaces, Enriching Lifestyles, Crafting Beauty,
+              Defining Comfort.
+            </p>
+            <a href="quotes.html" class="button button--flex">
+              Get Quotation <i class="ri-arrow-right-down-line button__icon"></i>
+            </a>
+          </div>
+
+          <div class="home__social">
+            <span class="home__social-follow">Follow Us</span>
+
+            <div class="home__social-links">
+              <!-- <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                                <i class="ri-facebook-fill"></i>
+                            </a> -->
+              <a
+                href="https://www.instagram.com/_varna_kala_?igsh=MWFxOHVxNXc4NTZkeQ=="
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+              <!-- <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                                <i class="ri-twitter-fill"></i>
+                            </a> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section container" id="about">
+        <div class="about__container grid">
+          <img src="varna.png" alt="" class="about__img" />
+
+          <div class="about__data">
+            <h2 class="section__title about__title">
+              Who we really are & <br />
+              why choose us
+            </h2>
+
+            <p class="about__description">
+              At Varnakala, we are more than just a design firm; we are
+              creators, innovators, and visionaries dedicated to transforming
+              spaces into personalized reflections of your lifestyle and
+              aspirations.
+            </p>
+
+            <div class="about__details">
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                We ensure precision and perfection in every aspect of our work.
+              </p>
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                We work with skilled craftsmen and use high-quality materials.
+              </p>
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                We involve our clients in every step of the design process,
+                ensuring transparency, communication, and satisfaction at every
+                stage.
+              </p>
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                Our goal is to create spaces that, look beautiful and enhance
+                the quality of life for our clients, making every day a little
+                brighter.
+              </p>
+            </div>
+
+            <!-- <a href="#" class="button--link button--flex">
+                            Shop Now <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a> -->
+          </div>
+        </div>
+      </section>
+
+      <!--==================== STEPS ====================-->
+      <section class="steps section container">
+        <div class="steps__bg">
+          <h2 class="section__title-center steps__title">
+            What we offer at VarnaKala
+          </h2>
+
+          <div class="steps__container grid">
+            <div class="steps__card">
+              <div class="steps__card-number">01</div>
+              <h3 class="steps__card-title">Interior Design</h3>
+              <p class="steps__card-description">
+                Space Planning, Customized Solutions,
+              </p>
+            </div>
+
+            <div class="steps__card">
+              <div class="steps__card-number">02</div>
+              <h3 class="steps__card-title">Renovation Services</h3>
+              <p class="steps__card-description">
+                Furniture Selection and Procurement, Lighting Design, Color
+                Consultation, Material Selection
+              </p>
+            </div>
+
+            <div class="steps__card">
+              <div class="steps__card-number">03</div>
+              <h3 class="steps__card-title">Project Management</h3>
+              <p class="steps__card-description">
+                Post-Completion Support - Our commitment to your satisfaction
+                doesn't end with project completion.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PRODUCTS ====================-->
+      <section class="product section container" id="products">
+        <h2 class="section__title-center">
+          Check out our <br />
+          products
+        </h2>
+
+        <p class="product__description">
+          Explore our online catalog to discover our full range of products and
+          services. With VarnaKala, you can turn your dreams home into reality.
+        </p>
+
+        <div class="product__container grid">
+
+          <a href="Modern Texture Wall Paint Designs for your Interiors.pdf" target="_blank">
+            <article class="product__card">
+              <img src="texture.jpg" alt="" class="product__img" />
+              <h3 class="product__title">Texture</h3>
+            </article>
+          </a>
+
+          <a href="False Ceiling.pdf" target="_blank">
+            <article class="product__card">
+              <img src="ceilings.jpg" alt="" class="product__img" />
+              <h3 class="product__title">Ceiling</h3>
+            </article>
+          </a>
+
+          <a href="WoodFinish.pdf" target="_blank">
+            <article class="product__card">
+              <img src="woodfinish.jpg" alt="" class="product__img" />
+              <h3 class="product__title">Wood Finish</h3>
+            </article>
+          </a>
+
+          <a href="Homes Painting.pdf" target="_blank">
+            <article class="product__card">
+              <img src="painting.jpg" alt="" class="product__img" />
+              <h3 class="product__title">Painting</h3>
+            </article>
+          </a>
+
+          <a href="wallpaper.pdf" target="_blank">
+            <article class="product__card">
+              <img src="wallpaper.jpg" alt="" class="product__img" />
+              <h3 class="product__title">Wall Paper</h3>
+            </article>
+          </a>
+
+          <!-- <a>
+            <article class="product__card">   
+              <img src="Designing.jpg" alt="" class="product__img" />
+              <h3 class="product__title">Designing</h3>
+            </article>
+          </a> -->
+
+
+          <div class="dropdown">
+            <button class="dropdown-btn">More Service</button>
+            <div class="dropdown-content">
+              <a href="living-room.pdf" target="_blank">
+                <article class="product__card">
+                  <img src="https://img.interiorcompany.com/interior/webproduct/633638185517409321232.JPG?aio=w-384;" alt="Designing" class="product__img" />
+                  <h3 class="product__title">Living Room</h3>
+                </article>
+              </a>
+              <a href="Modular Kitchen.pdf" target="_blank">
+                <article class="product__card">
+                  <img src="https://img.interiorcompany.com/interior/webproduct/801638205499929737945.jpg?aio=w-384;" alt="Consulting" class="product__img" />
+                  <h3 class="product__title">Modular Kitchen</h3>
+                </article>
+              </a>
+              <a href="Balcony Interior.pdf" target="_blank">
+                <article class="product__card">
+                  <img src="https://img.interiorcompany.com/interior/webproduct/648638027818199304764.jpg?aio=w-384;" alt="Development" class="product__img" />
+                  <h3 class="product__title">Balcony</h3>
+                </article>
+              </a>
+
+              <a href="Wardrobe Designs.pdf" target="_blank">
+                <article class="product__card">
+                  <img src="https://img.interiorcompany.com/interior/webproduct/705638530089099434512.png?aio=w-384;" alt="Development" class="product__img" />
+                  <h3 class="product__title">Wardrobe</h3>
+                </article>
+              </a>
+
+            </div>
+          </div>
+
+        </div>
+    </section>
+
+
+
+      <!--==================== QUESTIONS ====================-->
+      <section class="questions section" id="faqs">
+        <h2 class="section__title-center questions__title container">
+          Some common questions <br />
+          were often asked
+        </h2>
+
+        <div class="questions__container container grid">
+          <div class="questions__group">
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">
+                  Can you use spray paint with stencils?
+                </h3>
+              </header>
+
+              <div class="questions__content">
+                <p class="questions__description">
+                  We would not recommend using spray paints with stencils because spray paints are not viscous enough to get sharp imprints.
+                </p>
+              </div>
+            </div>
+
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">
+                  Which Is the Best Colour for a False Ceiling Colour Combination for a Luxurious Look?
+                </h3>
+              </header>
+
+              <div class="questions__content">
+                <p class="questions__description">
+                  For a luxurious look, opt for rich and regal hues such as gold, deep burgundy, or royal blue. These colours instantly elevate the ambiance of a room, creating an opulent and sophisticated atmosphere
+                </p>
+              </div>
+            </div>
+
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">
+                  How Can I Use Inexpensive Materials for Luxurious-Looking Pop Ceiling Colour Combinations?
+                </h3>
+              </header>
+
+              <div class="questions__content">
+                <p class="questions__description">
+                  Achieve a luxurious look on a budget by using affordable materials like PVC panels or lightweight gypsum boards. These materials can be easily painted and moulded into various shapes, allowing you to create intricate designs without breaking the bank.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="questions__group">
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">
+                  Why Is Plaster of Paris the Preferred Material for False Ceiling Colour Combinations?
+                </h3>
+              </header>
+
+              <div class="questions__content">
+                <p class="questions__description">
+                  Plaster of Paris (POP) is favoured for false ceiling installations due to its versatility, durability, and ease of customization. It can be moulded into intricate designs and painted in a variety of colours, making it an ideal choice for creating stunning ceiling combinations.
+                </p>
+              </div>
+            </div>
+
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">
+                  Do you provide full-service design or consultation-only
+                  services?
+                </h3>
+              </header>
+
+              <div class="questions__content">
+                <p class="questions__description">
+                  At Varnakala, we offer both full-service design and consultation-only services, depending on your needs. If you're looking for a complete, end-to-end design solution, we can handle everything from concept development to final execution. Alternatively, if you only need expert advice and guidance, our consultation services are available to support your project and help you bring your ideas to life. Whatever your requirement, we're flexible and here to assist you in the way that best suits your goals.
+                </p>
+              </div>
+            </div>
+
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">
+                  How involved will I be in the decision-making process?
+                </h3>
+              </header>
+
+              <div class="questions__content">
+                <p class="questions__description">
+                  At Varnakala, we value collaboration and believe in making our clients a key part of the decision-making process. Your input is essential at every stage, from concept to final execution. We ensure transparent communication and regular updates, so you can feel confident that your vision is reflected throughout the project. We’re here to guide you, but your voice will always be heard!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section container" id="contact">
+        <div class="contact__container grid">
+          <div class="contact__box">
+            <h2 class="section__title">
+              Reach out to us today <br />
+              via any of the given <br />
+              information
+            </h2>
+
+            <div class="contact__data">
+              <div class="contact__information">
+                <h3 class="contact__subtitle">Call us for instant support</h3>
+                <span class="contact__description">
+                  <i class="ri-phone-line contact__icon"></i>
+                  +91 93726 69715
+                </span>
+              </div>
+
+              <div class="contact__information">
+                <h3 class="contact__subtitle">Write us by mail</h3>
+                <span class="contact__description">
+                  <i class="ri-mail-line contact__icon"></i>
+                  cont.msdecors7@gmail.com services.msenterprises@yahoo.com
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <form action="" class="contact__form">
+            <div class="contact__inputs">
+              <div class="contact__content">
+                <input type="email" placeholder=" " class="contact__input" />
+                <label for="" class="contact__label">Email</label>
+              </div>
+
+              <div class="contact__content">
+                <input type="text" placeholder=" " class="contact__input" />
+                <label for="" class="contact__label">Subject</label>
+              </div>
+
+              <div class="contact__content contact__area">
+                <textarea
+                  name="message"
+                  placeholder=" "
+                  class="contact__input"
+                ></textarea>
+                <label for="" class="contact__label">Message</label>
+              </div>
+            </div>
+
+            <button class="button button--flex">
+              Send Message
+              <i class="ri-arrow-right-up-line button__icon"></i>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content">
+          <a href="#" class="footer__logo">
+            <!-- VarnaKala -->
+            <img src="varna.png" alt="" class="lovei" />
+          </a>
+
+          <!-- <h3 class="footer__title">
+                        Subscribe to our newsletter <br> to stay update
+                    </h3>
+
+                    <div class="footer__subscribe">
+                        <input type="email" placeholder="Enter your email" class="footer__input">
+
+                        <button class="button button--flex footer__button">
+                            Subscribe
+                            <i class="ri-arrow-right-up-line button__icon"></i>
+                        </button>
+                    </div> -->
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Our Address</h3>
+
+          <ul class="footer__data">
+            <li class="footer__information">Virar-W, Mumbai</li>
+            <!-- <li class="footer__information">Mumbai</li> -->
+            <li class="footer__information">Maharashtra</li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Contact Us</h3>
+
+          <ul class="footer__data">
+            <li class="footer__information">+91 638 640 0197</li>
+
+            <div class="footer__social">
+              <!-- <a href="https://www.facebook.com/" class="footer__social-link">
+                                <i class="ri-facebook-fill"></i>
+                            </a> -->
+              <a
+                href="https://www.instagram.com/_varna_kala_?igsh=MWFxOHVxNXc4NTZkeQ=="
+                class="footer__social-link" target="_blank"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a href="https://linkedin.com/" class="footer__social-link" target="_blank">
+                <i class="ri-linkedin-fill"></i>
+              </a>
+            </div>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">We accept all credit cards</h3>
+
+          <div class="footer__cards">
+            <img src="card1.png" alt="" class="footer__card" />
+            <img src="card2.png" alt="" class="footer__card" />
+            <img src="card3.png" alt="" class="footer__card" />
+            <img src="card4.png" alt="" class="footer__card" />
+          </div>
+        </div>
+      </div>
+
+      <p class="footer__copy">&#169; VarnaKala. All rigths reserved</p>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-fill scrollup__icon"></i>
+    </a>
+
+    <!--=============== SCROLL REVEAL ===============-->
+    <!-- <script src="assets/js/scrollreveal.min.js"></script> -->
+
+    <!--=============== MAIN JS ===============-->
+    <script src="main.js"></script>
+  </body>
+</html>

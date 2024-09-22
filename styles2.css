@@ -1,0 +1,114 @@
+:root {
+  --first-color:white;
+  /* --first-color-alt: #45A049; */
+  /* --text-color: #000000; */
+  --background-color: #F4F4F9;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background-color: var(--background-color); */
+  background-image: url("https://cdn.homedit.com/wp-content/uploads/2016/11/Under-the-stairs-cozy-design.jpg");
+  /* width:100%; */
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  /* background: white; */
+  backdrop-filter: blur(9px);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 9.1);
+}
+
+h1 {
+  text-align: center;
+  /* color: #338000; */
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  color: grey;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: var(--first-color);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--first-color);
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+}
+
+.form-group textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.form-actions button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.form-actions .btn-back {
+  background-color: #6c757d;
+  color: white;
+}
+
+.form-actions .btn-send {
+  background-color: green;
+  color: white;
+}
+
+.form-actions .btn-back:hover {
+  background-color: #5a6268;
+}
+
+.form-actions .btn-send:hover {
+  background-color: var(--first-color-alt);
+  transform: scale(1.05);
+  color: green;
+}
+
+footer {
+  background-color: var(--first-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Quotation</title>
+    <link rel="stylesheet" href="styles2.css"> <!-- Link to your CSS file -->
+   
+</head>
+<body>
+    
+
+    <div class="container">
+        <h1>Get a Quotation</h1>
+        <!-- <form action="/submit-quotation" method="post"> -->
+        <form id="quotationForm" method="POST" action="/api/get-quotation">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="service">Service Required</label>
+                <select id="service" name="service" required>
+                    <option value="" disabled selected>Select a service</option>
+                    <option value="consulting">Consulting</option>
+                    <option value="development">Development</option>
+                    <option value="design">Design</option>
+                    <option value="support">Support</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="additional-info">Additional Information</label>
+                <textarea id="additional-info" name="additional-info"></textarea>
+            </div>
+
+            <div class="form-actions">
+                <button type="button" class="btn-back" onclick="window.history.back();">Back</button>
+                <button type="submit" class="btn-send">Send</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+<script src="main2.js"></script>  
+</html>
