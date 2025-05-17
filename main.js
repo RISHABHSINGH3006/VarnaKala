@@ -140,3 +140,38 @@ sr.reveal(`.home__social`, {delay: 600})
 sr.reveal(`.about__img, .contact__box`,{origin: 'left'})
 sr.reveal(`.about__data, .contact__form`,{origin: 'right'})
 sr.reveal(`.steps__card, .product__card, .questions__group, .footer`,{interval: 100})
+
+// =============================cost estimator=========================================================================================
+
+document.addEventListener('DOMContentLoaded', function() {
+  const calculateButton = document.getElementById('calculate-estimation');
+  const totalCostElement = document.getElementById('total-cost');
+
+  calculateButton.addEventListener('click', function() {
+    // Get input values
+    const paintType = document.getElementById('paint-type').value;
+    const paintArea = parseInt(document.getElementById('paint-area').value) || 0;
+    const finishingType = document.getElementById('finishing-type').value;
+    const finishingArea = parseInt(document.getElementById('finishing-area').value) || 0;
+    const flooringType = document.getElementById('flooring-type').value;
+    const flooringArea = parseInt(document.getElementById('flooring-area').value) || 0;
+    const furnitureQuantity = parseInt(document.getElementById('furniture-quantity').value) || 0;
+    const decorBudget = parseInt(document.getElementById('decor-budget').value) || 0;
+
+    // Define some example costs (in Rupees) - Replace with your actual pricing logic
+    const paintCosts = { basic: 20, premium: 50 }; // Cost per sq ft
+    const finishingCosts = { basic: 30, wallpaper: 70 }; // Cost per sq ft
+    const flooringCosts = { tile: 60, wood: 150 }; // Cost per sq ft
+    const furnitureCostPerPiece = 5000; // Example cost per major furniture piece
+
+    // Calculate total cost
+    const paintCost = (paintCosts[paintType] || 0) * paintArea;
+    const finishingCost = (finishingCosts[finishingType] || 0) * finishingArea;
+    const flooringCost = (flooringCosts[flooringType] || 0) * flooringArea;
+    const furnitureCost = furnitureCostPerPiece * furnitureQuantity;
+    const totalCost = paintCost + finishingCost + flooringCost + furnitureCost + decorBudget;
+
+    // Display total cost
+    totalCostElement.textContent = totalCost.toFixed(2) + ' Rupees';
+  });
+});
