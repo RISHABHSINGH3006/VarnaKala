@@ -279,6 +279,66 @@
         </div>
     </section>
 
+<!-- ====================estimate cost ==================================== -->
+
+<section class="section container" id="estimation-calculator">
+  <h2 class="section__title-center">Estimate Your Home Renovation Costs</h2>
+  <div class="estimation-calculator__container grid">
+    <form id="estimation-form">
+      <div class="estimation-calculator__category">
+        <h3>Paint</h3>
+        <label for="paint-type">Type:</label>
+        <select id="paint-type">
+          <option value="basic">Basic</option>
+          <option value="premium">Premium</option>
+        </select>
+        <label for="paint-area">Area (sq ft):</label>
+        <input type="number" id="paint-area" value="0">
+      </div>
+
+      <div class="estimation-calculator__category">
+        <h3>Wall Finishing</h3>
+        <label for="finishing-type">Type:</label>
+        <select id="finishing-type">
+          <option value="basic">Basic</option>
+          <option value="wallpaper">Wallpaper</option>
+        </select>
+        <label for="finishing-area">Area (sq ft):</label>
+        <input type="number" id="finishing-area" value="0">
+      </div>
+
+      <div class="estimation-calculator__category">
+        <h3>Flooring</h3>
+        <label for="flooring-type">Type:</label>
+        <select id="flooring-type">
+          <option value="tile">Tile</option>
+          <option value="wood">Wood</option>
+        </select>
+        <label for="flooring-area">Area (sq ft):</label>
+        <input type="number" id="flooring-area" value="0">
+      </div>
+
+      <div class="estimation-calculator__category">
+        <h3>Furniture</h3>
+        <label for="furniture-quantity">Number of major pieces:</label>
+        <input type="number" id="furniture-quantity" value="0">
+      </div>
+
+      <div class="estimation-calculator__category">
+        <h3>Decor</h3>
+        <label for="decor-budget">Estimated budget (Rupees):</label>
+        <input type="number" id="decor-budget" value="0">
+      </div>
+
+      <button type="button" id="calculate-estimation" class="button button--flex">Calculate Estimation</button>
+    </form>
+
+    <div class="estimation-calculator__total">
+      <h3>Estimated Total:</h3>
+      <p id="total-cost">0 Rupees</p>
+    </div>
+  </div>
+</section>
 
 
       <!--==================== QUESTIONS ====================-->
