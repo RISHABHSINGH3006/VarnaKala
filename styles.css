@@ -1263,3 +1263,50 @@ the website, in dark theme
     right: 3rem;
   }
 }
+
+
+/* ================estimator cost============================= */
+
+
+#estimation-calculator .estimation-calculator__container {
+  gap: 3rem;
+}
+
+#estimation-calculator .estimation-calculator__category {
+  margin-bottom: 1.5rem;
+}
+
+#estimation-calculator .estimation-calculator__category h3 {
+  margin-bottom: 0.5rem;
+}
+
+#estimation-calculator .estimation-calculator__category label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+#estimation-calculator .estimation-calculator__category select,
+#estimation-calculator .estimation-calculator__category input[type="number"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+#estimation-calculator .estimation-calculator__total h3 {
+  margin-bottom: 0.5rem;
+}
+
+#estimation-calculator .estimation-calculator__total p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--title-color);
+}
+
+/* Add some responsiveness */
+@media screen and (min-width: 768px) {
+  #estimation-calculator .estimation-calculator__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
